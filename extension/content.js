@@ -1,8 +1,3 @@
-/*
-author: Joshua Ondieki
-github: https://github.com/JoshuaOndieki
-*/
-
 setTimeout(timer, 3000);
 
 function timer(){

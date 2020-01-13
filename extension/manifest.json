@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "uhrs Extension ~ OJ",
+    "name": "uhrs Extension",
     "description": "Assists in training for the uhrs project!",
     "version": "1.0",
     "content_scripts":
