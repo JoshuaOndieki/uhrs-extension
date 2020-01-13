@@ -184,7 +184,8 @@ function timer(){
         var agreeButton = document.querySelector("#agreeButton");
 
         function onSubmitHit(){
-            
+            firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
+
             officialRating = document.getElementById("officialJudgment").textContent;
             officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
 
@@ -205,9 +206,6 @@ function timer(){
                 document.getElementById("hintsrating").innerHTML = "RATING";
                 document.getElementById("hintshitlevelreason").innerHTML = "Hit level reason..";
             }
-
-            firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
-
         }
 
         // submit0.addEventListener("click", onSubmitHit, false);
@@ -229,7 +227,7 @@ function timer(){
         console.log("firebase get queries..");
         firebaseRef.on("value", function(data){
             firebaseQueries = data.val()["queries"];
-            if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == true){
+            if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == "granted"){
                 checkq();
             }
             else{
@@ -243,7 +241,7 @@ function timer(){
 
             if (data.val()["users"].hasOwnProperty(currentUser) == false){
                 firebaseRef.child("users").child(currentUser).set({
-                    "access": false,
+                    "access": denied,
                     "joined": Date()
                 });
             }
