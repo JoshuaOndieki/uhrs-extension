@@ -4,7 +4,7 @@ function timer(){
     var iframe0 = document.getElementById('HitFrame_0_0').contentWindow;
     var iframe1 = document.getElementById('HitFrame_1_0').contentWindow;
 
-    console.log('time up');
+    console.log('Starting extension load..');
 
     var hintdivhtml = `
     <style>
@@ -60,8 +60,10 @@ function timer(){
     hints.innerHTML = hintdivhtml;
 
     document.getElementById("realBody").appendChild(hints);
-
-
+    var infotd0 = iframe0.document.querySelector("body > div > table > tbody > tr:nth-child(1) > td:nth-child(2)");
+    infotd0.parentNode.removeChild(infotd0);
+    var infotd1 = iframe1.document.querySelector("body > div > table > tbody > tr:nth-child(1) > td:nth-child(2)");
+    infotd1.parentNode.removeChild(infotd1);
 
     // FIREBASE API //
     function setupFirebase(callback){
@@ -169,6 +171,7 @@ function timer(){
             };
         }
 
+        currentUser = document.getElementById("userName").textContent.slice(6,);
         var uniqueQueryID = "";
         var queryText = "";
         var query = getQuery();
@@ -181,8 +184,6 @@ function timer(){
         var agreeButton = document.querySelector("#agreeButton");
 
         function onSubmitHit(){
-            console.log(document.getElementById("instantFeedbackPanel"));
-            console.log(agreeButton.textContent);
             
             officialRating = document.getElementById("officialJudgment").textContent;
             officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
@@ -205,6 +206,8 @@ function timer(){
                 document.getElementById("hintshitlevelreason").innerHTML = "Hit level reason..";
             }
 
+            firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
+
         }
 
         // submit0.addEventListener("click", onSubmitHit, false);
@@ -226,11 +229,30 @@ function timer(){
         console.log("firebase get queries..");
         firebaseRef.on("value", function(data){
             firebaseQueries = data.val()["queries"];
-            checkq();
+            if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == true){
+                checkq();
+            }
+            else{
+                document.getElementById("hintsrating").innerHTML = "RATING ACCESS DENIED";
+                document.getElementById("hintsrating").style.color = "red";
+                document.getElementById("hintsrating").style["line-height"] = "30px";
+                document.getElementById("hintshitlevelreason").innerHTML = "You are not authorized to access hint ratings. Ask for access from the person who gave you this extension.";
+                document.getElementById("hintshitlevelreason").style.color = "red";
+                
+            }
+
+            if (data.val()["users"].hasOwnProperty(currentUser) == false){
+                firebaseRef.child("users").child(currentUser).set({
+                    "access": false,
+                    "joined": Date()
+                });
+            }
         });
         function checkq(){
-            console.log(firebaseQueries);
             query = getQuery();
+            document.getElementById("hintsrating").style.color = "green";
+            document.getElementById("hintshitlevelreason").style.color = "black";
+            document.getElementById("hintsrating").style["line-height"] = "60px";
             if (searchQuery() == true){
                 var hintRating = firebaseQueries[queryText][uniqueQueryID]["rating"];
                 var hintComment = firebaseQueries[queryText][uniqueQueryID]["comment"];
