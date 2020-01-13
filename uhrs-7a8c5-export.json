@@ -1,0 +1,508 @@
+{
+  "queries" : {
+    " nova grill" : {
+      "Grille-OneStop Shop for Every-wwwauto" : {
+        "adDescription" : "One-Stop Shop for Everything Grille Free Shipping on Orders Over $50.",
+        "adTitle" : "Grille Replacements",
+        "adURL" : "www.autopartswarehouse.com",
+        "comment" : "The query is searching for a grille for a 1975 Chevy Nova vehicle.  The ad is broadly offering \"Grille Replacements\" without specifying andy specific year, make, or model in it's Title, Description, or URL.  Ads that are wholly broader than the query but are still relevant should be rated Good.",
+        "rating" : "Good"
+      }
+    },
+    "Breitling  Skyland Avenger Chrono Black Steel V" : {
+      "Black -Up To  Off  Auto -Shopzill" : {
+        "adDescription" : "Up To 50% Off  Auto Accessories. Deals On Black Steel Wheels!",
+        "adTitle" : "Black Steel Wheels",
+        "adURL" : "Shopzilla.com/Automotive",
+        "comment" : "The Ad selling black steel wheels for cars which has no relationship with the query's  most likely intent to purchase a Breitling Skyland Avenger Chrono Black Steel  V2 watch. Watches and car tires are not related.  The Ad mentions \"black steel\" in a completely different context  than the query.   ",
+        "rating" : "Bad"
+      }
+    },
+    "Ductless Mini Split Air Conditioners" : {
+      "Ductless Mini Spli-Ductless MiniSplits A-wwwalp" : {
+        "adDescription" : "Ductless Mini-Splits As Low As $469 Free Shipping, Order Online Now!",
+        "adTitle" : "Ductless Mini Split AC - Lowest Prices & Full Warranty",
+        "adURL" : "www.alpinehomeair.com",
+        "comment" : "The Ad matches the query's most likely intent to find Ductless Mini Split Air Conditioners.   The Ad offers only Ductless Mini Split Air Conditioners which matches  the query's specificity and the Ad's url is from a source that will have the right set of content.  An Excellent Ad answers the most likely user intent  of the query with the same level of specificity.",
+        "rating" : "Excellent"
+      }
+    },
+    "Hotline Miami Chapter " : {
+      "Dont F-Before Filing See I-FloridaDe" : {
+        "adDescription" : "Before \"Filing,\" See If You Qualify for Relief w/out a Bankruptcy!",
+        "adTitle" : "Don't File Ch. 13 BK?",
+        "adURL" : "FloridaDebtRelief.org/Online",
+        "comment" : "Research shows that the user is most likely looking for cheats or a walkthrough of chapter 13 of the Hotline Miami video game. The Ad mentions Chapter 13 in a completely different context; the user never intended to file for bankruptcy so there is no relationship between the Ad and query.  The Ad should be labeled as Bad.",
+        "rating" : "Bad"
+      }
+    },
+    "VLC Media Player Free Download" : {
+      "Free VL-VLC Media Player Plays-www" : {
+        "adDescription" : "VLC Media Player Plays Most Video & Audio Files. Download For Free.",
+        "adTitle" : "Free VLC Media Player",
+        "adURL" : "www.VLCapp.com",
+        "comment" : "The Ad captures the QY's most likely intent to download VLC Media Player for free.  The description offers exactly what the user is looking for and the URL is a source with the right content; web search shows that VLCapp.com is not the official site, so the Ad cannot be labeled as Perfect.  The Ad should receive a rating of Excellent.",
+        "rating" : "Excellent"
+      }
+    },
+    "adwords" : {
+      "Goog-Find Customers With G-Google" : {
+        "adDescription" : "Find Customers With Google AdWords. Get Your Own Ad Online Today.",
+        "adTitle" : "Google AdWords",
+        "adURL" : "Google.com/AdWords",
+        "comment" : "The Ad answers the dominant navigational intent to navigate to the official website for Google AdWords.  The Ad equals the query in specificity in the title, description and URL.  The Ad doesn't offer anything additional that broadens/narrows the query.  The URL indicates the user will land on the official site of the query.  The appropriate rating for this Ad is Perfect.  The Ad is from Google.com but since the user's intent is for Google AdWords the Ad can be labeled Perfect.",
+        "rating" : "Perfect"
+      }
+    },
+    "amazon mens casual shoes" : {
+      "DXL Destination XL Big  Tal-Shop Mens Big  Tall Jeans From DXL To-wwwdesti" : {
+        "adDescription" : "Shop Men's Big & Tall Jeans From DXL Today!. The Destination for Men's XL Style. Shop Big & Tall Clothes, Shoes & More",
+        "adTitle" : "DXL® Destination XL Big & Tall - Men's Big & Tall Jeans - Free Shipping On Orders $100+",
+        "adURL" : "www.destinationxl.com/Jeans",
+        "comment" : "The query has a dominant navigational intent to visit Amazon.com to shop for men's casual shoes.  The Ad does not satisfy the query's navigational intent, and the Ad's title offers men's jeans which are not related to men's shoes.  Users shopping for shoes are unlikely to be interested in Ads offering men's jeans so the Ad should be labeled as Bad.  A Bad Ad may mention the search term 'mens' but in a different context that is not what the user intended.  Refer to the Bad 'groundhog diets' example in the Guidelines.",
+        "rating" : "Bad"
+      }
+    },
+    "bank of america" : {
+      "America Banks Rev-Want Info on Americ-wwwtruthfin" : {
+        "adDescription" : "Want Info on America Banks? Just Search A Name and State.",
+        "adTitle" : "America Banks Revealed - Most Accurate Search Results",
+        "adURL" : "www.truthfinder.com/Find/America Banks",
+        "comment" : "The query has the dominant navigational intent for the official site of Bank of America. The Ad is for a background check website using terms from the query, America Banks, but has nothing to with the query. According to the guidelines, an Ad that is so poorly formatted that it is silly or embarrassing (this is often the case with template Ads) should be rated Bad. See the “curbside composting neighborhood Cambridge” example in the guidelines. This Ad has no Quality Issues.",
+        "rating" : "Bad"
+      }
+    },
+    "beatles radio stations free online" : {
+      "Listen -Listen To Liste-FreeR" : {
+        "adDescription" : "Listen To Listen To Online Radio. Tune In Now!",
+        "adTitle" : "Listen To Online Radio",
+        "adURL" : "FreeRadioHD.com",
+        "comment" : "The Ad addresses the most likely query intent to listen to beatles radio stations free online. However, the Ad is broader than the specific query, offering all radio stations. While the description of 'Listen To Listen To Online Radio' unnecessarily repeats the words 'Listen To', we can still understand that the Ad offers radio stations. A Good Ad is about the right product but without the correct level of specificity. ",
+        "rating" : "Good"
+      }
+    },
+    "bit lots fort walton beachfl" : {
+      "Memorial Day Sale -Save On a Variety of Moder-wwwf" : {
+        "adDescription" : "Save On a Variety of Modern & Classic Furniture For Every Room. Sale Ends 5/28.",
+        "adTitle" : "Memorial Day Sale Event - Home Decor, Bedrooms, & More",
+        "adURL" : "www.furniture.com",
+        "comment" : "This query is most likely misspelt and is looking for the derpartment store Big Lots in Fort Walton Beach, FL.  The ad is offering a competing furniture store (a subset of items on offer at Big Lots) that users might consider as an alternative.  Alternative/competing Ads should be rated as Fair.",
+        "rating" : "Fair"
+      }
+    },
+    "boston red sox" : {
+      "Fen-Fully Interactive Seat-seat" : {
+        "adDescription" : "Fully Interactive Seating Charts! Browse maps for best ticket deals",
+        "adTitle" : "Fenway Park",
+        "adURL" : "seatgeek.com",
+        "comment" : "The Ad satisfies one likely user intent to buy Boston Red Sox tickets.  The provides details for Fenway Park tickets.  Web search shows that Fenway Park is a baseball park in Boston, MA and is the home of the Boston Red Sox, so the Ad offers one location where users can watch the team play.  The Ad should be rated as Good.",
+        "rating" : "Good"
+      }
+    },
+    "buy ninjago bytar" : {
+      "Ninjago-Save on Ninjago Byt-wwwAm" : {
+        "adDescription" : "Save on Ninjago Bytar. Free 2-Day Shipping w/Amazon Prime.",
+        "adTitle" : "Ninjago Bytar at Amazon",
+        "adURL" : "www.Amazon.com/toys",
+        "comment" : "The Ad matches the most likely transactional intent of the query to buy a LEGO Ninjago Bytar, which is a minifigure toy.  The Ad's title and description are exactly specific for the query, so that the user can tell this Ad is selling exactly what they want.  The Ad's URL lands on a consistent and broader toys subpage at a store that the user can reasonably expect to sell Ninjago Bytar minifigures.  Ads that answer the most likely user intent of the query with the same level of specificity should be labeled as Excellent.",
+        "rating" : "Excellent"
+      }
+    },
+    "california daily  results" : {
+      "Daily -Get Your Favorite Sp-MlbGea" : {
+        "adDescription" : "Get Your Favorite Sports Gear. Save On Daily3 Winning Number!",
+        "adTitle" : "Daily3 Winning Number",
+        "adURL" : "MlbGear.BizRate.com",
+        "comment" : "The query intent is to find the winning number for the California Lottery's  Daily 3, but the Ad is a poorly formatted shopping template that should be labeled  as Bad.  The \"Daily3 Winning Number\" is not a product that can be sold and  if it were, it would not belong in the sports or MLB gear category.  ",
+        "rating" : "Bad"
+      }
+    },
+    "chocolate chip cookie recipe" : {
+      "Recipes-Enjoy Toll House Ea-wwwverybe" : {
+        "adDescription" : "Enjoy Toll House® Easy Dessert Recipes. Bake Some Love Today!",
+        "adTitle" : "Recipes With TOLL HOUSE",
+        "adURL" : "www.verybestbaking.com/TollHouse",
+        "comment" : "The QY's intent is to find chocolate chip cookie recipes and the Ad offers dessert recipes with Nestle Toll House ingredients, such as chocolate chips.  The Ad is broader in specificity but the user can reasonably expect to obtain chocolate chip cookie recipes at the Ad site.  The Ad should be rated as Good.    ",
+        "rating" : "Good"
+      }
+    },
+    "coed gallery threeway amateur" : {
+      "Chocolat-MILF b-wwwy" : {
+        "adDescription" : "MILF big ass mama!",
+        "adTitle" : "Chocolate mamas big tits",
+        "adURL" : "www.youporn.com",
+        "comment" : "The ad's intent is to find a specific gallery of amateur porn.  The Ad is offering an unrelated category, and so the Ad should be rated as Bad.  As the query and/or Ad are adult in nature, the adult checkbox should be checked.",
+        "rating" : "Bad"
+      }
+    },
+    "colorado springs hotels" : {
+      "The A-Free WIFI  Cooked to -wwwThe" : {
+        "adDescription" : "Free WIFI & Cooked to order Breakfast + $10 dining credit per night",
+        "adTitle" : "The Academy Hotel",
+        "adURL" : "www.TheAcademyHotel.com",
+        "comment" : "The Ad satisfies the most likely transactional intent to book hotels in Colorado Springs, but the Ad is narrower than the query intent.  Research shows that The Academy Hotel is located in Colorado Springs, however The Academy Hotel is only one hotel out of many in that city.  The Ad's hotel may not offer all of the options and amenities the user might want.  If the query is location-specific and the Ad matches the query's location but addresses the query's intent with narrower specificity, then the Ad should be labeled as Good.",
+        "rating" : "Good"
+      }
+    },
+    "direct flights from nashville to" : {
+      "Low Fares  Nonstop-Get the Best Fares From-wwwsouthw" : {
+        "adDescription" : "Get the Best Fares From Columbus. Book Your Tickets on Southwest Now!",
+        "adTitle" : "Low Fares & Nonstop Flights - Southwest Airlines - Official",
+        "adURL" : "www.southwest.com/Official/Site",
+        "comment" : "The location specific query has the most likely transactional intent to book a direct flight from Nashville, TN. The Ad is for direct flights from Southwest Airlines. However, the description narrows the Ad to flights originating in Columbus, Ohio. Although there are other cities named Nashville and Columbus, research shows these are the two cities that have direct flights available. Research also shows that Columbus, OH is further than 25 miles from Nashville, TN. According to the guidelines, when the query has a specific intent, such as looking for a specific item or service in a location, the location must be within a twenty-five mile radius to be considered relevant to the query. This Ad is a location mismatch and should be rated Bad. See the bad “Nightclubs in Nashville” example in the guidelines. There are no quality issues.",
+        "rating" : "Bad"
+      }
+    },
+    "dress up event hall duncanville tx" : {
+      "find your wedding dr- in store samples doz-lastingbridal" : {
+        "adDescription" : "300+ in store samples, dozens of designers, 25+ years experience, come in today!",
+        "adTitle" : "find your wedding dress today - top bridal boutique in dallas.",
+        "adURL" : "lastingbridalcouture.com/wedding/dresses",
+        "comment" : "This Ad offers a complementary intent to find wedding dresses in Dallas.  The query is searching for a wedding venue in Duncanville, TX, which is within 25 miles of Dallas. As the ad is offering a complementary intent, it should be rated Fair. *Note, this hit was originally from the 02/06 JAS set",
+        "rating" : "Fair"
+      }
+    },
+    "east stroudsburg over 55 rentals" : {
+      "Best Communities fo-Expert Advice On The Best -cresswindco" : {
+        "adDescription" : "Expert Advice On The Best Places To Live for Active Adults. Get Your Guide Now!",
+        "adTitle" : "Best Communities for Seniors - Get Your Free Online Guide",
+        "adURL" : "cresswind.com/Senior/HomeBuyingGuide",
+        "comment" : "This location specific query is looking for rentals for people over 55 in East Stroudsburg, Pennsylvania. The Ad is for a guide to communities for seniors to live. The Ad is weakly related to the query in that the URL includes the information for a Home Buying guide. A person interested in renting a home may also be interested in buying one. In addition, the Ad is broader in location in that it is not specific to East Stroudsburg in location. The Ad is also broader in communities for seniors and not specific to over 55 communities. The Ad should be rated fair. See the ‘apartments for rent in dallas’ example in the guidelines. There are no quality issues.",
+        "rating" : "Fair"
+      }
+    },
+    "electronics stores" : {
+      "Conns E- APR for  months on -" : {
+        "adDescription" : "0% APR for 6 months on electronics  $299+ Apply Now! See Credit Terms",
+        "adTitle" : "Conn's Electronics Sale‎",
+        "adURL" : "",
+        "comment" : "The query intent is to search for electronics stores, and the Ad presents a sale from the Conn's electronic store chain.  The Ad is relevant to the query, but the URL is missing.  The Ad contains a missing URL so it should be rated as Unsure.",
+        "rating" : "Unsure"
+      }
+    },
+    "fedora" : {
+      "Fedora  Over -Low Prices -wwwHatCo" : {
+        "adDescription" : "Low Prices & Fast Ship - Shop Now!",
+        "adTitle" : "Fedora - Over 300+ Fedoras from Only $19.98.",
+        "adURL" : "www.HatCountry.com/FedoraHats",
+        "comment" : "The query has multiple meanings and intents, including for fedora hats, the Fedora operating system, Larry Fedora, Fedora in NYC, the Fedora film, etc.  Research shows that there is not a clear majority of users searching for the type of hat called a fedora.  The Ad satisfies a likely transactional intent of the query to purchase fedora hats.  Ads that answer likely, but not most likely, intents of the query should be labeled as Good rather than Excellent.",
+        "rating" : "Good"
+      }
+    },
+    "free porn movies" : {
+      "Best p-hottest porn -wwwt" : {
+        "adDescription" : "hottest porn pictures videos Low Prices.",
+        "adTitle" : "Best porn hot guys",
+        "adURL" : "www.topporn.com",
+        "comment" : "The query is looking for free porn movies.  The ad is offering porn for sale at \"low prices\".  This is a complimentary intent as users looking for free services could potentially consider paying for them, and so the LP should be rated as Fair.  As the query and/or Ad are adult in nature, the adult checkbox should be checked.",
+        "rating" : "Fair"
+      }
+    },
+    "gander mountain work boot" : {
+      "Wor-Huge Selection of Mens-wwwZapp" : {
+        "adDescription" : "Huge Selection of Men's & Women's Work Boots! Free Shipping & Returns.",
+        "adTitle" : "Work Boots",
+        "adURL" : "www.Zappos.com/Work-Boots",
+        "comment" : "The query has a dominant intent to visit the site of Gander Mountain to search for work boots.  The Ad displays a URL from a site other than gandermountain.com so the Ad doesn't answer the query's navigational intent.  Gander Mountain is a retail store so the Zappos Ad is from a competitor.  The user may be interested in buying work boots from a competing site, so the Ad should be rated as Fair.",
+        "rating" : "Fair"
+      }
+    },
+    "hilton garden inn" : {
+      "Hilton-Visit Our Official Site-wwwhilton" : {
+        "adDescription" : "Visit Our Official Site, Book Now & Get Up to 15% Off Hotel Bookings!",
+        "adTitle" : "Hilton Garden Inn ®",
+        "adURL" : "www.hiltongardeninn.hilton.com",
+        "comment" : "The query has a dominant navigational intent - to navigate to the official homesite for the Hilton Garden Inn. The specificity of the Ad perfectly matches the specificity of the query intent, that is, the Ad is neither broader nor narrower with respect to the query. The title displays the same level of specificity as the query and the description offers a general introduction to the site. The description references a discount that is general across the site, so this description does not narrow the Ad as it would if the descripiton was for a specific, limited sale or promotion. The URL indicates the user will land on the top level of the site. ",
+        "rating" : "Perfect"
+      }
+    },
+    "homemade rug cleaner recipe" : {
+      "Formula -Our Carpet Cleaner Ca-Formula" : {
+        "adDescription" : "Our Carpet Cleaner Can Handle Party Foul Messes to Pet Mishaps.",
+        "adTitle" : "Formula 409® for Carpets",
+        "adURL" : "Formula409.com/Carpet-Cleaner",
+        "comment" : "The query has a most likely informational intent to find a recipe for making a homemade rug cleaner.  The Ad is selling Formula 409 carpet cleaner that does not satisfy the query's informational intent to find rug cleaner recipes.  Since the Ad offers the user an alternative way to clean their rugs, the Ad is similar to the query and should be labeled as Fair.",
+        "rating" : "Fair"
+      }
+    },
+    "how to play darts" : {
+      "Black-Shop Black Widow Soft -wwwDa" : {
+        "adDescription" : "Shop Black Widow Soft & Steel Tip Darts Today. Low Prices & Free S/H!",
+        "adTitle" : "Black Widow Darts",
+        "adURL" : "www.Dartboards.com",
+        "comment" : "The user wants to learn to play darts and is looking for instructions, videos etc. The Ad does not satisfy this intent, but answers a weakly related intent to purchase darts. A user looking to learn to play darts may also be interested in purchasing darts equipment. ",
+        "rating" : "Fair"
+      }
+    },
+    "infowars" : {
+      "Official Infowars S-Shop The Official I-wwwinf" : {
+        "adDescription" : "Shop The Official Infowars Store! Free Shipping Storewide",
+        "adTitle" : "Official Infowars Store Sale - Memorial Day Patriot Special",
+        "adURL" : "www.infowarsstore.com",
+        "comment" : "The most likely intent for this query is to visit and/or learn about the News website Infowars.  The Ad is offering up a likely transactional intent to purchase Infowars merchanidse.  Ads satisfying likely intents should be rated Good.",
+        "rating" : "Good"
+      }
+    },
+    "irobot braava jet reuseable pads at walmart" : {
+      " Braava jet-Compare prices  B-wwwgosalec" : {
+        "adDescription" : "Compare prices.  Braava jet 240 Mopping Robot on sale.",
+        "adTitle" : "$135.00 Braava jet 240 - Compare Prices at Every Store.",
+        "adURL" : "www.gosale.com/irobot-braava/jet-420",
+        "comment" : "The query is searching for reusable pads for an iRobot robotic mop.  The ad is offering the robot itself for sale which users would not be interested in as they already own the robot.  Ads that no users would be interested in should be rated Bad.",
+        "rating" : "Bad"
+      }
+    },
+    "isharescom" : {
+      "iShares-Explore Over  ETFs f-wwwi" : {
+        "adDescription" : "Explore Over 250 ETFs from iShares. View Profiles, Holdings & Returns.",
+        "adTitle" : "iShares - Official Site",
+        "adURL" : "www.iShares.com",
+        "comment" : "The dominant navigational intent of the query is to reach iShares.com, BlackRock's official site for its iShares Exchange Traded Funds.  The Ad's title of \"iShares - Official Site\" displays the same level of specficity as the query.  The Ad's display url indicates that the user will land on iShares.com.  Since iShares is a family of ETFs, the Ad's description offering ETFs is appropriate for presenting a general introduction to the site.  The user will be convinced by reading the Ad that clicking on the Ad's url will take them to the iShares home page.",
+        "rating" : "Perfect"
+      }
+    },
+    "j brand jeans" : {
+      "J Brand Offic-This Memorial Day Weeken-wwwjb" : {
+        "adDescription" : "This Memorial Day Weekend Only - Shop Now! Free Shipping & Easy Returns.",
+        "adTitle" : "J Brand® Official Site - 20% Off Sale Items",
+        "adURL" : "www.jbrandjeans.com",
+        "comment" : "This query is searching for the store J Brand Jeans.  The ad is from this particular store, however both the title and description are referencing a time-limited sale for Memorial Day.  Ads that mention time-limited sales like this in both the Title and Description are narrowing the intent of the query and should be rated Good.",
+        "rating" : "Good"
+      }
+    },
+    "jimmy johns" : {
+      "Jimmy John Revea-Want Info on Jimmy-TruthFinde" : {
+        "adDescription" : "Want Info on Jimmy John? Just Search A Name and State.",
+        "adTitle" : "Jimmy John Revealed - Most Accurate Search Results",
+        "adURL" : "TruthFinder.com/Find/Jimmy John",
+        "comment" : "The user's intent is to find the restaurant Jimmy John's.  The Ad is offering information about non-famous people named Jimmy John which is a very unlikely intent for this query.  No users searching for this query would be interested in this Ad and it shouldn't be served up for this query.  As such, the Ad should be rated Bad.",
+        "rating" : "Bad"
+      }
+    },
+    "jira" : {
+      "Free Jira Alterna-Issue tracking version co-bac" : {
+        "adDescription" : "Issue tracking, version control & wiki in one platform. Create a Free account!",
+        "adTitle" : "Free Jira Alternative - All in One Project Management",
+        "adURL" : "backlog.com",
+        "comment" : "The user is looking for an Issue & Project Tracking software called Jira.  The ad is offering a Free Jira Alternative.  Ads that satisfy alternative/competing intents to the query should be rated Fair.",
+        "rating" : "Fair"
+      }
+    },
+    "kenmore vacuum cleaner bags" : {
+      "kenmore v-Vacuum Bags for All Mak-EZvacuumc" : {
+        "adDescription" : "Vacuum Bags for All Makes & Models. Fast Free Shipping Plus 10% Off !",
+        "adTitle" : "kenmore vacuum cleaner bags",
+        "adURL" : "EZvacuum.com/Kenmore-Vacuum-Bags",
+        "comment" : "Ad answers the QY's most likely transactional intent to buy Kenmore vacuum cleaner bags.  Its title offers exactly what the user is looking for.  The description is a more general template, but the user can easily see their exact product displayed in the title, which is a prominent part of the Ad.  In addition the URL is from a source with the right products.  The Ad should receive a rating of Excellent.",
+        "rating" : "Excellent"
+      }
+    },
+    "kindergarten worksheets" : {
+      "Free Kindergarten-The most comprehensive lib-wwweducation" : {
+        "adDescription" : "The most comprehensive library of digital games and free kindergarten worksheets",
+        "adTitle" : "Free Kindergarten Worksheets - Printable and Digital",
+        "adURL" : "www.education.com/kindergarten/worksheets",
+        "comment" : "The Ad matches the query's most likely intent to find Kindergarten worksheets.   The Ad offers only Kindergarten worksheets which matches  the query's specificity and the Ad's url is from a source that will have the right set of content.  An Excellent Ad answers the most likely user intent  of the query with the same level of specificity.",
+        "rating" : "Excellent"
+      }
+    },
+    "littons knoxville tennessee" : {
+      "Knoxvill-See Knoxville TN Hom-HomeListin" : {
+        "adDescription" : "See Knoxville TN Home Listings Find Local Real Estate Agents!",
+        "adTitle" : "Knoxville Homes For Sale",
+        "adURL" : "HomeListingsFinder.com/Knoxville",
+        "comment" : "The user is looking for Litton's Market, Restaurant & Bakery in Knoxville, TN.  The Ad is selling homes that do not satisfy the query's intent to find Litton's Market.  Although the Ad and the query are both located in Knoxville, homes are not similar to markets, restaurants, and bakeries therefore the Ad should be labeled as Bad.",
+        "rating" : "Bad"
+      }
+    },
+    "mahjong free online" : {
+      "Play Sup-Play Mahjong -FreeOnli" : {
+        "adDescription" : "Play Mahjong. Free Verisons Of Mahjong Are",
+        "adTitle" : "Play Super Mahjong Match",
+        "adURL" : "FreeOnlineMahjongGames.net",
+        "comment" : "The Ad matches the query's most likely intent to play mahjong online.  The Ad offers free mahjong online games which matches  the query's specificity and the Ad's url is from a source that will have the  right set of content.  While the Ad's description is cut off and missing words \"Free Versions  Of Mahjong Are\", when correcting for this error we can still understand the the Ad offers exactly what the user wants. An Excellent Ad answers the most likely user intent  of the query with the same level of specificity. ",
+        "rating" : "Excellent"
+      }
+    },
+    "mens warehouse" : {
+      "Shop M-Polish Your Look at Me-MensWearho" : {
+        "adDescription" : "Polish Your Look at Mens Wearhouse. Free Shipping on $150. Shop Now!",
+        "adTitle" : "Shop Men's Wearhouse",
+        "adURL" : "MensWearhouse.com/OfficialSite",
+        "comment" : "Dominant navigational intent for the official Men's Wearhouse site.  The Ad's title and url indicate the user will land on the official site and its description presents a general introduction to the store and isn't narrowed to any specific product, promotion etc.  The user will be convinced by reading the Ad that clicking on the Ad's url will take them to the companyâ€™s home page.",
+        "rating" : "Perfect"
+      }
+    },
+    "murray  weed eater" : {
+      "Worx Hydroshot-Celebrate Hydroshots s-wwwworxc" : {
+        "adDescription" : "Celebrate Hydroshot's 1's Birthday With Free Shipping On All Models. Buy Now!",
+        "adTitle" : "Worx® Hydroshot's 1st Birthday - Get Free Shipping",
+        "adURL" : "www.worx.com/Hydroshot/Birthday",
+        "comment" : "The query is searching for a specific Weed Eater while the Ad is offering a specific type of Power Washer.  While these are both broadly speaking household tools, there is little relationship between the two products and we wouldn't expect users searching for one would be interested in the other.  As such, the Ad should be rated Bad.",
+        "rating" : "Bad"
+      }
+    },
+    "ny times" : {
+      "The Ne-Subscribers Get Unli-wwwN" : {
+        "adDescription" : "Subscribers Get Unlimited Digital Access. Sign Up Now & Save!",
+        "adTitle" : "The New York Times",
+        "adURL" : "www.NYTimes.com",
+        "comment" : "Query has a dominant navigational intent to navigate to the official New York Times website.  The Ad's title displays the same level of specificity as the query and the url lands on the correct homepage at www.NYTimes.com.  The Ad's description, however, is specific for signing up for a digital subscription, which is not a general introduction to the NYT brand so the Ad cannot be labeled as Perfect.  Since the Ad matches the dominant navigational intent to navigate to the brand's homepage but does not match perfectly based on specificity and detail, the Ad should be labeled as Excellent.",
+        "rating" : "Excellent"
+      }
+    },
+    "pc headset" : {
+      "PC Headset Lowest -Unbeatable price Pc HEADSE-wwwbhphotovide" : {
+        "adDescription" : "Unbeatable price Pc HEADSET & all Cameras, Computers, Audio, Video, Accessories",
+        "adTitle" : "PC Headset Lowest Prices - Free Express Shipping Avail.",
+        "adURL" : "www.bhphotovideo.com/Search_Site/Lowest_Price",
+        "comment" : "The Ad matches the query's most likely intent to find PC Headsets.   The Ad offers only PC Headset which matches  the query's specificity and the Ad's url is from a source that will have the right set of content.  An Excellent Ad answers the most likely user intent  of the query with the same level of specificity.",
+        "rating" : "Excellent"
+      }
+    },
+    "pnc" : {
+      "PN-Official Site Keep Yo-PN" : {
+        "adDescription" : "Official Site. Keep Your Finances in Check with Tools from PNC Bank.",
+        "adTitle" : "PNC Bank",
+        "adURL" : "PNC.com",
+        "comment" : "Query for PNC with a dominant navigational intent to navigate to the official site.  The Ad is from the official PNC site and lands on the correct PNC homepage.  The Ad's title displays the same level of specificity as the query.  The user will be convinced by reading the Ad that clicking on the Ad will take them to the official PNC homepage.",
+        "rating" : "Perfect"
+      }
+    },
+    "police scanner" : {
+      "Brother-USB Powered Compact -wwwBr" : {
+        "adDescription" : "USB Powered Compact Scanner Perfect for Mobile Professionals!",
+        "adTitle" : "Brother™ DS-600 Mobile",
+        "adURL" : "www.BrotherMall.com",
+        "comment" : "The user is looking for a police scanner.  The Ad is selling a Brother DS-600 scanner which research shows to be a document & photo scanner rather than a police scanner so the Ad does not satisfy the query's intent.  Since document scanners are not products similar to police scanners, the Ad should be labeled as Bad.  A Bad Ad may mention the search terms but in a totally different meaning that is not what the user intended.",
+        "rating" : "Bad"
+      }
+    },
+    "roblox" : {
+      "Ro-Create Your Own D Wor-Rob" : {
+        "adDescription" : "Create Your Own 3D World. Imagine It. Build It. Play For Free Now.",
+        "adTitle" : "Roblox",
+        "adURL" : "Roblox.com",
+        "comment" : "Query for Roblox with a dominant navigational intent to navigate to the official site.  The Ad is from the official Roblox site and lands on the correct Roblox.com homepage.  The Ad's title displays the same level of specificity as the query.  Since Roblox is an online gaming site where users can both build and play games, the Ad's description is an appropriate general introduction to the Roblox brand.  The user will be convinced by reading the Ad that clicking on the Ad will take them to the official Roblox homepage.",
+        "rating" : "Perfect"
+      }
+    },
+    "sony led tv" : {
+      "Officia-Take the Cinematic Exp-Samsu" : {
+        "adDescription" : "Take the Cinematic Experience Home. Enjoy Samsung's Sleek LED TVs.",
+        "adTitle" : "Official Samsung LED TV",
+        "adURL" : "Samsung.com/LED",
+        "comment" : "The QY specifies a Sony LED TV and the Ad is for the same product from Samsung. The Ad is for a competitive product. The guidelines specify that when an Ad is for a competitive product / service / content or site to that which is specified in the query, the appropriate rating is Fair. ",
+        "rating" : "Fair"
+      }
+    },
+    "tlcharger need for speed" : {
+      "need-Find need for spee-XboxGa" : {
+        "adDescription" : "Find need for speed Here. Compare & Review Video Games!",
+        "adTitle" : "need for speed",
+        "adURL" : "Xbox360Games.PriceGrabber.com",
+        "comment" : "The query contains a word in French ('telecharger') that English speakers cannot  understand.  Since we cannot understand the entire query, we cannot properly  determine its intent and the Ad's relevance.  If the query is written in a  foreign language, then the Ad should be labeled as Unsure.  ",
+        "rating" : "Unsure"
+      }
+    },
+    "tomandjerry" : {
+      "Tom  J-Whiskers Bluray At A-wwwHo" : {
+        "adDescription" : "Whiskers Blu-ray At A Low Price. Order Now & Get Free Shipping!",
+        "adTitle" : "Tom & Jerry: Shiver Me",
+        "adURL" : "www.HotMovieSale.com",
+        "comment" : "The QY for Tom and Jerry has multiple intents and the Ad defines a likely intent to buy a Tom and Jerry movie on blu-ray.  While the Ad's title runs into the description, we can still understand that it offers this Tom and Jerry movie.  Ads that answer likely, but not most likely, intents of the query should be labeled as Good.",
+        "rating" : "Good"
+      }
+    },
+    "truck trader com" : {
+      "Find Use-Large Inventory of Use-wwwKBB" : {
+        "adDescription" : "Large Inventory of Used Trucks To Choose From. Search Listings Now!",
+        "adTitle" : "Find Used Trucks for Sale",
+        "adURL" : "www.KBB.com/Used-Trucks",
+        "comment" : "The query has a dominant Navigational intent for trucktrader.com.  The Ad is offering  used trucks from a competitor site, Kelly Blue Book. The Ad should be rated  Fair.  ",
+        "rating" : "Fair"
+      }
+    },
+    "tuning fork" : {
+      "About Tu-Great Value for About T-www" : {
+        "adDescription" : "Great Value for About Tuning Forks. Get NexTag Sellers' Lowest Price!",
+        "adTitle" : "About Tuning Forks Cheap",
+        "adURL" : "www.NexTag.com",
+        "comment" : "The Ad matches the query's most likely intent to buy tuning forks. The Ad offers tuning forks which matches the query's specificity and the Ad's url is from a source that will have the right set of content.  While Ad's description is poor quality \"for About Tuning Forks\", when correcting for this error we can still understand the Ad offers exactly what the user wants. An Excellent Ad answers the most likely user intent  of the query with the same level of specificity. ",
+        "rating" : "Excellent"
+      }
+    },
+    "vintage womens tops" : {
+      "Find Dresses and A-Purchase From Our Collecti-wwwdil" : {
+        "adDescription" : "Purchase From Our Collection Of Eliza J Clothes and Accessories To Look Stylish.",
+        "adTitle" : "Find Dresses and Accessories - Browse Dillard's Website",
+        "adURL" : "www.dillards.com/ElizaJ",
+        "comment" : "The query is searching for vintage women's tops, a type of clothing.  The Ad is offering dresses and accessories.  Users who are searching for women's tops may also be interested in shopping for dresses and accessories and so this can be considered a complementary intent to the query which the Ad is satisfying.  Ads satisfying complementary intents should be rated Fair.",
+        "rating" : "Fair"
+      }
+    },
+    "water damage restoration ft lauderdale" : {
+      " Wa-WaterSewageMold clean-wwwHig" : {
+        "adDescription" : "Water,Sewage,Mold clean up&Drying Specialist.Est 1983Call 203-956-5710",
+        "adTitle" : "24/7 Water Damage Help",
+        "adURL" : "www.HighTower-Group.com",
+        "comment" : "The user is looking for  businesses in Ft. Lauderdale, FL. While the Ad offers the correct business, the area code indicates it is located in CT. There is a location mismatch. The user would not have any interest in businesses serving CT. Judges should ignore minor construction issues such as missing spaces and punctuation. ",
+        "rating" : "Bad"
+      }
+    },
+    "web search evaluator jobs" : {
+      "Monstercom  Offic-Search Jobs or Post-promoti" : {
+        "adDescription" : "Search Jobs or Post a Job in no time. Start at Monster.com.",
+        "adTitle" : "Monster.com® - Official Site - Use Monster find jobs near you",
+        "adURL" : "promotions.monster.com",
+        "comment" : "The query is searching for web search evaluator jobs.  The ad is broadly offering Monster.com, a job search website that would include this type of job as well as many others. All parts of the ad are broader than the query.  Ads that are wholly broader than the query but are still relevant should be rated Good.",
+        "rating" : "Good"
+      }
+    },
+    "widespread panic songs" : {
+      "Widespre-Buy Widespread Panic Ti-wwwS" : {
+        "adDescription" : "Buy Widespread Panic Tickets at StubHub. All Tickets 100% Guaranteed.",
+        "adTitle" : "Widespread Panic Tickets",
+        "adURL" : "www.StubHub.com",
+        "comment" : "The Ad offers Widespread Panic tickets that do not satisfy the query's intent to find Widespread Panic songs.  Since the query and Ad are both about Widespread Panic and users interested in listening to or purchasing Widespread Panic songs may also be interested in listening to those songs live at a concert, the query and Ad are weakly related.  A Fair Ad does not address the intent of the query but there is a weak relationship between the query and Ad.",
+        "rating" : "Fair"
+      }
+    },
+    "womens wide shoes" : {
+      "Womens -Payless Carries Wide Wo-wwwPayle" : {
+        "adDescription" : "Payless Carries Wide Womens Shoes. Shop At Payless Online & In Stores.",
+        "adTitle" : "Womens Shoes at Payless",
+        "adURL" : "www.Payless.com/WomensShoes",
+        "comment" : "The Ad captures the QY's most likely transactional intent to purchase wide women's shoes.  The description, which is a prominent part of the Ad, offers exactly what the user is looking for.  Also, the URL from Payless.com which sells a broad range of shoe brands and is a source with the right products.  The Ad should receive a rating of Excellent. ",
+        "rating" : "Excellent"
+      }
+    },
+    "wwwguesscom" : {
+      "GUESS-ForwardThinking Ti-GUESSc" : {
+        "adDescription" : "Forward-Thinking, Timeless Fashion. Shop GUESS® Official Site!",
+        "adTitle" : "GUESS® Official Site",
+        "adURL" : "GUESS.com/Official-Site",
+        "comment" : "The Ad addresses the user's dominant navigational intent to reach the official site for the Guess clothing company. The title and URL both indicate the user will land on the homepage of the official Guess site and the description is an appropriately general introduction and isn't limited to any specific type of clothing or specific sale or promotion. The user will be confident they will reach the exact site they want. ",
+        "rating" : "Perfect"
+      }
+    },
+    "wynn las vegas" : {
+      "Wynn-Save on Wynn Las Veg-WynnLasVe" : {
+        "adDescription" : "Save on Wynn Las Vegas Hotel Great Deals & Specials. Book Now!",
+        "adTitle" : "Wynn Las Vegas",
+        "adURL" : "WynnLasVegasHotel.ReSaver.com",
+        "comment" : "The query's intent is to find the Wynn hotel in Las Vegas and the Ad is from one such site offering that exact Hotel.  Ads that exactly satisfy what the user is searching for but are not from the official site for that product/service should be reated Excellent. ",
+        "rating" : "Excellent"
+      }
+    },
+    "ملفات iptv مجانيه" : {
+      "IPTV RESEL- Channels Adults-premium" : {
+        "adDescription" : "5500 Channels. Adults/ 4K/ HD. Unlimited Reseller price 250 euros/Mo",
+        "adTitle" : "IPTV RESELLER - USA UK Adults 4K",
+        "adURL" : "premiumiptvchannels.com",
+        "comment" : "Research shows that the query is in Arabic, which is a foreign language in this market. If the query contains any foreign terms or references a site that is in a foreign language, then the Ad should be labeled as Unsure. Refer to the 'yerli blue' example in the Guidelines.",
+        "rating" : "Unsure"
+      }
+    }
+  }
+}

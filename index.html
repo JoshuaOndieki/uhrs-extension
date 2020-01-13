@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>uhrs</title>
+        <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+        <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+        <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+    </head>
+    <body>
+        <button class="ui button" onClick="createQueryKey()">create query key</button>
+        <button class="ui blue button" onClick="viewQueries()">View Queries</button>
+        <script>
+            function firstonclick(){
+                alert("first onclick..");
+            }
+
+            function secondonclick(){
+                alert("second onclick");
+            }
+        </script>
+        <button id="multiclicks" class="ui red button" onclick="firstonclick();secondonclick()">multiple onclick</button>
+
+        <script>
+            document.getElementById("multiclicks").addEventListener("click", function(){alert("third onclick..")}, false);
+        </script>
+        <!--
+        <!- The core Firebase JS SDK is always required and must be listed first ->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+        <!- firebase database->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+        -->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDx0krgpOZ_3uKUpVxLqhkmMiMeBemBBso",
+            authDomain: "uhrs-7a8c5.firebaseapp.com",
+            databaseURL: "https://uhrs-7a8c5.firebaseio.com",
+            projectId: "uhrs-7a8c5",
+            storageBucket: "uhrs-7a8c5.appspot.com",
+            messagingSenderId: "583114931028",
+            appId: "1:583114931028:web:18aa208f075ebd44b3e6c1",
+            measurementId: "G-K8E2BSSBJ7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        console.log(firebase);
+        
+
+        var firebaseRef = firebase.database().ref();
+
+        function createQueryKey(){
+            console.log('create query key..');
+            console.log(firebaseRef);
+            
+            firebaseRef.child("queries").child("hilton garden inn").set({
+                "Hilton-Visit Our Official Site-wwwhilton" : {
+        "adDescription" : "Visit Our Official Site, Book Now & Get Up to 15% Off Hotel Bookings!",
+        "adTitle" : "Hilton Garden Inn ®",
+        "adURL" : "www.hiltongardeninn.hilton.com",
+        "comment" : "The query has a dominant navigational intent - to navigate to the official homesite for the Hilton Garden Inn. The specificity of the Ad perfectly matches the specificity of the query intent, that is, the Ad is neither broader nor narrower with respect to the query. The title displays the same level of specificity as the query and the description offers a general introduction to the site. The description references a discount that is general across the site, so this description does not narrow the Ad as it would if the descripiton was for a specific, limited sale or promotion. The URL indicates the user will land on the top level of the site. ",
+        "rating" : "Perfect"
+      }
+    });
+        }
+
+        function viewQueries(){
+            firebaseRef.on("value", function(data){
+                console.log(data.val()["queries"]["1"]);
+                console.log(data.val()["queries"].hasOwnProperty("4"));
+
+            });            
+        }
+
+        function addquery(){
+
+        }
+        </script>
+    </body>
+</html>
