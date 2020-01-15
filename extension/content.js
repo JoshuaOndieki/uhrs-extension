@@ -121,7 +121,7 @@ function timer(){
 
 
         function getQuery(){
-            console.log("get query..")
+            console.log("get query..");
             if (document.getElementById('HitFrame_0_0').style.display === "inline"){
                 var iframe0query = iframeQuery(iframe0);
                 setTimeout(updateNextUpQuery, 3000);
@@ -148,7 +148,8 @@ function timer(){
 
         function iframeQuery(iframeX){
             //Query
-            queryText = iframeX.document.getElementById("queryId").textContent.replace(/[^a-zA-Z ]/g, "");
+            rawQuery = iframeX.document.getElementById("queryId").textContent;
+            queryText = rawQuery.replace(/[^a-zA-Z ]/g, "");
 
             // Ad title
             var adTitle = iframeX.document.getElementById("adTitleId").textContent;
@@ -167,11 +168,13 @@ function timer(){
                 "queryText": queryText,
                 "adTitle": adTitle,
                 "adDescription": adDescription,
-                "adURL": adURL
+                "adURL": adURL,
+                "rawQuery": rawQuery
             };
         }
 
         currentUser = document.getElementById("userName").textContent.slice(6,);
+        var currentVersion = "";
         var uniqueQueryID = "";
         var queryText = "";
         var query = getQuery();
@@ -184,13 +187,19 @@ function timer(){
         var agreeButton = document.querySelector("#agreeButton");
 
         function onSubmitHit(){
-            firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
+            if (currentVersion["write-obsolete"]){
+                console.log("This version is obsolete. Write access denied!");
+            }
+            else{
+                firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
 
-            officialRating = document.getElementById("officialJudgment").textContent;
-            officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
-
-            if (searchQuery() == false){
-                firebaseAddQuery(query, officialRating, officialComment);
+                officialRating = document.getElementById("officialJudgment").textContent;
+                officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
+    
+                if (searchQuery() == false){
+                    console.log("adding query..");
+                    firebaseAddQuery(query, officialRating, officialComment);
+                }
             }
 
             console.log("next query..");
@@ -206,6 +215,7 @@ function timer(){
                 document.getElementById("hintsrating").innerHTML = "RATING";
                 document.getElementById("hintshitlevelreason").innerHTML = "Hit level reason..";
             }
+
         }
 
         // submit0.addEventListener("click", onSubmitHit, false);
@@ -226,28 +236,39 @@ function timer(){
     
         console.log("firebase get queries..");
         firebaseRef.on("value", function(data){
-            firebaseQueries = data.val()["queries"];
-            if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == "granted"){
-                checkq();
-            }
-            else{
-                document.getElementById("hintsrating").innerHTML = "RATING ACCESS DENIED";
-                document.getElementById("hintsrating").style.color = "red";
-                document.getElementById("hintsrating").style["line-height"] = "30px";
-                document.getElementById("hintshitlevelreason").innerHTML = "You are not authorized to access hint ratings. Ask for access from the person who gave you this extension.";
-                document.getElementById("hintshitlevelreason").style.color = "red";
-                
-            }
-
             if (data.val()["users"].hasOwnProperty(currentUser) == false){
                 firebaseRef.child("users").child(currentUser).set({
                     "access": denied,
                     "joined": Date()
                 });
             }
+
+            if (data.val()["versions"]["cb0c2ee777054e54c51420dfc2e2cf82"]["read-obsolete"]){
+                document.getElementById("hintsrating").innerHTML = "VERSION OUTDATED!";
+                document.getElementById("hintsrating").style.color = "red";
+                document.getElementById("hintsrating").style["line-height"] = "30px";
+                document.getElementById("hintshitlevelreason").innerHTML = "This extension version has been outdated! Request for the updated extension!";
+                document.getElementById("hintshitlevelreason").style.color = "red";
+            }
+            else{
+                firebaseQueries = data.val()["queries"];
+                currentVersion = data.val()["versions"]["cb0c2ee777054e54c51420dfc2e2cf82"];
+                if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == "granted"){
+                    checkq();
+                }
+                else{
+                    document.getElementById("hintsrating").innerHTML = "RATING ACCESS DENIED";
+                    document.getElementById("hintsrating").style.color = "red";
+                    document.getElementById("hintsrating").style["line-height"] = "30px";
+                    document.getElementById("hintshitlevelreason").innerHTML = "You are not authorized to access hint ratings. Ask for access from the person who gave you this extension.";
+                    document.getElementById("hintshitlevelreason").style.color = "red";
+                    
+                }
+            }
+
         });
         function checkq(){
-            query = getQuery();
+            // query = getQuery();
             document.getElementById("hintsrating").style.color = "green";
             document.getElementById("hintshitlevelreason").style.color = "black";
             document.getElementById("hintsrating").style["line-height"] = "60px";
@@ -265,41 +286,19 @@ function timer(){
         console.log("firebase..");
         // Add query
         function firebaseAddQuery(query, rating, comment){
-            console.log("current query")
+            console.log("current query");
             console.log(query);
             console.log(rating + " :: " + comment);
-
-            // if (firebaseQueries.hasOwnProperty(query["queryText"])){
-            //     firebaseRef.child("queries").child(queryText).child(uniqueQueryID).set({
-            //         "adTitle": query["adTitle"],
-            //         "adDescription": query["adDescription"],
-            //         "adURL": query["adURL"],
-            //         "rating": rating,
-            //         "comment": comment
-            //     });
-            // }
 
             firebaseRef.child("queries").child(queryText).child(uniqueQueryID).set({
                 "adTitle": query["adTitle"],
                 "adDescription": query["adDescription"],
                 "adURL": query["adURL"],
                 "rating": rating,
-                "comment": comment
+                "comment": comment,
+                "rawQuery": query["rawQuery"]
             });
 
-            // else{
-            //     firebaseRef.child("queries").set({
-            //         [queryText]:{
-            //             [uniqueQueryID]: {
-            //                 "adTitle": query["adTitle"],
-            //                 "adDescription": query["adDescription"],
-            //                 "adURL": query["adURL"],
-            //                 "rating": rating,
-            //                 "comment": comment
-            //             }
-            //         }
-            //     });
-            // }
         }
         // Search query
         function searchQuery(){
