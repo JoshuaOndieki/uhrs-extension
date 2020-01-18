@@ -238,12 +238,12 @@ function timer(){
         firebaseRef.on("value", function(data){
             if (data.val()["users"].hasOwnProperty(currentUser) == false){
                 firebaseRef.child("users").child(currentUser).set({
-                    "access": denied,
+                    "access": "denied",
                     "joined": Date()
                 });
             }
 
-            if (data.val()["versions"]["cb0c2ee777054e54c51420dfc2e2cf82"]["read-obsolete"]){
+            if (data.val()["versions"]["c0a62931421183c09b82b44fa4bdc7e7"]["read-obsolete"]){
                 document.getElementById("hintsrating").innerHTML = "VERSION OUTDATED!";
                 document.getElementById("hintsrating").style.color = "red";
                 document.getElementById("hintsrating").style["line-height"] = "30px";
@@ -252,7 +252,7 @@ function timer(){
             }
             else{
                 firebaseQueries = data.val()["queries"];
-                currentVersion = data.val()["versions"]["cb0c2ee777054e54c51420dfc2e2cf82"];
+                currentVersion = data.val()["versions"]["c0a62931421183c09b82b44fa4bdc7e7"];
                 if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == "granted"){
                     checkq();
                 }
