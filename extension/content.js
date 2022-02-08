@@ -204,7 +204,7 @@ function timer(){
             var submit0 = iframe0.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
             var submit1 = iframe1.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
             var agreeButton = document.querySelector("#agreeButton");
-            
+
             submit0.addEventListener("click", getNextQuery, false);
             submit1.addEventListener("click", getNextQuery, false);
             agreeButton.addEventListener("click", onSubmitHit, false);
@@ -265,7 +265,7 @@ function timer(){
                 });
             }
 
-            if (data.val()["versions"]["c0a62931421183c09b82b44fa4bdc7e7"]["read-obsolete"]){
+            if (data.val()["versions"]["3cdd8983980f9deae73a0076d481d874"]["read-obsolete"]){
                 document.getElementById("hintsrating").innerHTML = "VERSION OUTDATED!";
                 document.getElementById("hintsrating").style.color = "red";
                 document.getElementById("hintsrating").style["line-height"] = "30px";
@@ -274,7 +274,7 @@ function timer(){
             }
             else{
                 firebaseQueries = data.val()["queries"];
-                currentVersion = data.val()["versions"]["c0a62931421183c09b82b44fa4bdc7e7"];
+                currentVersion = data.val()["versions"]["3cdd8983980f9deae73a0076d481d874"];
                 if (data.val()["users"].hasOwnProperty(currentUser) && data.val()["users"][currentUser]["access"] == "granted"){
                     checkq();
                 }
