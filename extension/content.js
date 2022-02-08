@@ -212,6 +212,10 @@ function timer(){
 
                 officialRating = document.getElementById("officialJudgment").textContent;
                 officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
+                var submit0 = iframe0.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
+                var submit1 = iframe1.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
+                var agreeButton = document.querySelector("#agreeButton");
+
 
                 if (searchQuery() == false){
                     console.log("adding query..");
@@ -222,6 +226,10 @@ function timer(){
             getNextQuery();
 
         }
+
+        var submit0 = iframe0.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
+        var submit1 = iframe1.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
+        var agreeButton = document.querySelector("#agreeButton");
 
         submit0.addEventListener("click", getNextQuery, false);
         submit1.addEventListener("click", getNextQuery, false);
