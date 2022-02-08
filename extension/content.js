@@ -223,8 +223,8 @@ function timer(){
 
         }
 
-        // submit0.addEventListener("click", getNextQuery, false);
-        // submit1.addEventListener("click", getNextQuery, false);
+        submit0.addEventListener("click", getNextQuery, false);
+        submit1.addEventListener("click", getNextQuery, false);
         agreeButton.addEventListener("click", onSubmitHit, false);
 
         var firebaseRef = firebase.database().ref();
