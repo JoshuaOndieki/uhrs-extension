@@ -200,6 +200,15 @@ function timer(){
                 document.getElementById("hintsrating").innerHTML = "RATING";
                 document.getElementById("hintshitlevelreason").innerHTML = "Hit level reason..";
             }
+
+            var submit0 = iframe0.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
+            var submit1 = iframe1.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
+            var agreeButton = document.querySelector("#agreeButton");
+            
+            submit0.addEventListener("click", getNextQuery, false);
+            submit1.addEventListener("click", getNextQuery, false);
+            agreeButton.addEventListener("click", onSubmitHit, false);
+
         }
 
 
