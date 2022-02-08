@@ -11,22 +11,22 @@ function timer(){
     * {
       box-sizing: border-box;
     }
-    
+
     /* Create two unequal columns that floats next to each other */
     .column {
       float: left;
     }
-    
+
     .left {
       width: 25%;
       height: 120px;
     }
-    
+
     .right {
       width: 75%;
       height: 120px;
     }
-    
+
     /* Clear floats after the columns */
     .row:after {
       content: "";
@@ -69,24 +69,24 @@ function timer(){
     function setupFirebase(callback){
         var firebaseScript = document.createElement("script");
         firebaseScript.src = "https://www.gstatic.com/firebasejs/7.6.2/firebase.js";
-    
+
         // var firebaseAppScript = document.createElement("script");
         // firebaseAppScript.src = "https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js";
-    
+
         // var firebaseDatabaseScript = document.createElement("script");
         // firebaseDatabaseScript.src = "https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js";
-    
+
         // var firebaseAnalysisScript = document.createElement("script");
         // firebaseAnalysisScript.src = "https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js";
-        
+
         document.head.appendChild(firebaseScript);
         // document.body.appendChild(firebaseAppScript);
         // document.body.appendChild(firebaseDatabaseScript);
         // document.body.appendChild(firebaseAnalysisScript);
-    
+
         setTimeout(callback, 1000);
-    
-    
+
+
     }
 
     function setupFirebaseCallback(){
@@ -106,13 +106,13 @@ function timer(){
         firebase.initializeApp(firebaseConfig);
         // firebase.analytics();
         `;
-    
+
         var firebaseAPIConfigScript = document.createElement("script");
         // firebaseAPIConfigScript.setAttribute("async", "false");
         firebaseAPIConfigScript.setAttribute("defer", "");
         firebaseAPIConfigScript.innerHTML = firebaseAPIConfigScriptRaw;
         document.body.appendChild(firebaseAPIConfigScript);
-    
+
         var firebaseAPIScriptRaw = `
         console.log("firebase api..");
 
@@ -142,7 +142,7 @@ function timer(){
             else{
                 iframeX = iframe0;
             }
-            document.getElementById("nextupquery").innerHTML = "<strong>NEXT QUERY: </strong>" + 
+            document.getElementById("nextupquery").innerHTML = "<strong>NEXT QUERY: </strong>" +
             iframeX.document.getElementById("queryId").textContent;
         }
 
@@ -159,9 +159,9 @@ function timer(){
 
             // Ad url
             var adURL = iframeX.document.getElementById("adDisplayURLId").textContent;
-            
-            uniqueQueryID = adTitle.slice(0,Math.floor(adTitle.length/3)).replace(/[^a-zA-Z ]/g, "") + "-" + 
-            adDescription.slice(0,Math.floor(adDescription.length/3)).replace(/[^a-zA-Z ]/g, "") + "-" + 
+
+            uniqueQueryID = adTitle.slice(0,Math.floor(adTitle.length/3)).replace(/[^a-zA-Z ]/g, "") + "-" +
+            adDescription.slice(0,Math.floor(adDescription.length/3)).replace(/[^a-zA-Z ]/g, "") + "-" +
             adURL.slice(0,Math.floor(adURL.length/3)).replace(/[^a-zA-Z ]/g, "");
 
             return {
@@ -186,22 +186,7 @@ function timer(){
         var submit1 = iframe1.document.querySelector("body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > p:nth-child(6) > input[type=button]");
         var agreeButton = document.querySelector("#agreeButton");
 
-        function onSubmitHit(){
-            if (currentVersion["write-obsolete"]){
-                console.log("This version is obsolete. Write access denied!");
-            }
-            else{
-                firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
-
-                officialRating = document.getElementById("officialJudgment").textContent;
-                officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
-    
-                if (searchQuery() == false){
-                    console.log("adding query..");
-                    firebaseAddQuery(query, officialRating, officialComment);
-                }
-            }
-
+        function getNextQuery(){
             console.log("next query..");
             query = getQuery();
             console.log(query);
@@ -215,15 +200,35 @@ function timer(){
                 document.getElementById("hintsrating").innerHTML = "RATING";
                 document.getElementById("hintshitlevelreason").innerHTML = "Hit level reason..";
             }
+        }
+
+
+        function onSubmitHit(){
+            if (currentVersion["write-obsolete"]){
+                console.log("This version is obsolete. Write access denied!");
+            }
+            else{
+                firebaseRef.child("users").child(currentUser).child("hits").child(Date()).set(uniqueQueryID);
+
+                officialRating = document.getElementById("officialJudgment").textContent;
+                officialComment = document.getElementById("instantFeedbackOfficialComment").textContent;
+
+                if (searchQuery() == false){
+                    console.log("adding query..");
+                    firebaseAddQuery(query, officialRating, officialComment);
+                }
+            }
+
+            getNextQuery();
 
         }
 
-        // submit0.addEventListener("click", onSubmitHit, false);
-        // submit1.addEventListener("click", onSubmitHit, false);
+        // submit0.addEventListener("click", getNextQuery, false);
+        // submit1.addEventListener("click", getNextQuery, false);
         agreeButton.addEventListener("click", onSubmitHit, false);
 
         var firebaseRef = firebase.database().ref();
-    
+
         // Get all queries
         var firebaseQueries = {};
         function firebaseGetQueries(){
@@ -233,7 +238,7 @@ function timer(){
 
             });
         }
-    
+
         console.log("firebase get queries..");
         firebaseRef.on("value", function(data){
             if (data.val()["users"].hasOwnProperty(currentUser) == false){
@@ -262,7 +267,7 @@ function timer(){
                     document.getElementById("hintsrating").style["line-height"] = "30px";
                     document.getElementById("hintshitlevelreason").innerHTML = "You are not authorized to access hint ratings. Ask for access from the person who gave you this extension.";
                     document.getElementById("hintshitlevelreason").style.color = "red";
-                    
+
                 }
             }
 
@@ -326,7 +331,7 @@ function timer(){
         document.body.appendChild(firebaseAPIScript);
     }
 
-    
+
     setupFirebase(setupFirebaseCallback);
 
 
